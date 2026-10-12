@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weather-cli"
+version = "1.0.0"
+description = "A command-line weather app powered by Open-Meteo"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31.0"]
+
+[project.scripts]
+weather = "weather_cli:main"
+
+[tool.setuptools]
+py-modules = ["weather_cli"]
